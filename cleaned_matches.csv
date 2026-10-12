@@ -1,0 +1,6 @@
+match_id,date_utc,home_team,away_team,home_score,away_score,winner,total_runs,status,broadcast
+"bbab0b1a-86f7-48c1-b5fd-ca4c83f45119","2026-09-11","Chicago Cubs","Pittsburgh Pirates",12,2,"Chicago Cubs",14,"FINISHED","MLB.TV"
+"77efd0ae-5384-4036-9cbe-f5022975127f","2026-09-11","Detroit Tigers","Colorado Rockies",6,2,"Detroit Tigers",8,"FINISHED","MLB.TV"
+"836ab182-627f-4eeb-b0c7-94148f9c5ff4","2026-09-11","Washington Nationals","Los Angeles Angels",4,3,"Washington Nationals",7,"FINISHED","MLB.TV"
+"7ef21baf-79d8-48b0-8f63-da829a1db266","2026-09-11","New York Yankees","New York Mets",6,4,"New York Yankees",10,"FINISHED","ESPN Unlmtd"
+"ab6a7fa8-f47b-4aca-b203-a1d8bf32b756","2026-09-11","Toronto Blue Jays","Baltimore Orioles",4,7,"Baltimore Orioles",11,"FINISHED","MLB.TV"
