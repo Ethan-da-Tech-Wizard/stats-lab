@@ -8,7 +8,8 @@
 import fs from 'fs';
 import { DatabaseSync } from 'node:sqlite';
 
-const API_KEY = 'bbs_live_000000XxvYdBPIYWikOz2PkDSyoxSk56QmI0kSeIG9p3fhMS';
+const API_KEY = process.env.BIGBALLS_API_KEY;
+if (!API_KEY) throw new Error('Set BIGBALLS_API_KEY in your environment before running the ETL.');
 
 // Parse CLI arguments (e.g., node etl.js sport=baseball league=mlb limit=5)
 const args = process.argv.slice(2);
