@@ -7,6 +7,12 @@ Small programming exercises for dice simulation, sports-match ETL, tabular data,
 
 [Project guide](docs/PROJECT_GUIDE.md) · [Every file explained](docs/FILE_GUIDE.md) · [Licenses and dependencies](docs/LICENSE_REVIEW.md)
 
+## Sports-data credentials
+
+The ETL reads `BIGBALLS_API_KEY` from the environment. Copy [`.env.example`](.env.example) to `.env` and add a new key locally; `.env` and `.env.*` are ignored by Git. For a Node version supporting `--env-file`, start it with `node --env-file=.env etl.js`. Never commit a real key, including in the example file.
+
+The ETL contacts an external service and writes local files and a SQLite database. Review the script before running; it drops and recreates a table. If a key was previously published, revoke or rotate it with the provider—Git history can retain old values.
+
 ## Start here
 
 - [craps_simulation.py](craps_simulation.py) — Craps Baby! Ethan-da-Tech-Wizard 09/12/2026 I will be simulating the game of craps. The user will roll two dice and the program will determine if they win or lose based on the rule… Connects `random`.
@@ -23,7 +29,7 @@ Small programming exercises for dice simulation, sports-match ETL, tabular data,
 
 ## Scope and current limits
 
-This edition uses a public author handle and a descriptive exercise filename. It contains no student identifier or private Git history. Sports data retains its original provider rights.
+Sports data retains its original provider rights.
 
 ## License
 
