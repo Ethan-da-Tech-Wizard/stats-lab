@@ -20,7 +20,7 @@ Small programming exercises for dice simulation, sports-match ETL, tabular data,
 
 ## Scope and current limits
 
-This edition uses a public author handle and a descriptive exercise filename. It contains no student identifier or private Git history. Sports data retains its original provider rights.
+This edition uses a public author handle and descriptive filenames. Clean repository history maintained. Sports data retains its original provider rights.
 
 ## License
 

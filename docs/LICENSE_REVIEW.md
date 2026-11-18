@@ -14,7 +14,7 @@ The owner selected MIT for previously unlicensed original code. Existing license
 
 ## Project-specific considerations
 
-This edition uses a public author handle and a descriptive exercise filename. It contains no student identifier or private Git history. Sports data retains its original provider rights.
+This edition uses a public author handle and descriptive filenames. Clean repository history maintained. Sports data retains its original provider rights.
 
 ## Remaining work before binary distribution
 
