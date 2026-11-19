@@ -8,6 +8,15 @@
 #          Evaluates instantaneous settlement on Naturals (7, 11) or Craps
 #          (2, 3, 12), and tracks the Markovian state transitions until
 #          hitting the established point or a terminal Seven-Out condition.
+#
+# How it fits: a standalone script with no imports from, and no importers in, this repo
+#   (etl.js is unrelated). It runs top to bottom at import time, so it cannot be imported
+#   or unit-tested as a module; there is no automated test for it.
+# Inputs/outputs: reads only Enter key presses from stdin; prints each roll and the final
+#   win/lose line. Nothing is saved to disk.
+# Design decisions: one single Pass Line bet is modelled; Come, Don't Pass, odds bets and
+#   money are deliberately out of scope. random.randint is not seeded, so every run differs.
+# Run: python3 craps_simulation.py
 # ==============================================================================
 
 import random
@@ -53,7 +62,8 @@ else:
     print("Your point is", point)
     game_over = False
 
-    # Execute the iteration loop across subsequent point rolls
+    # The loop only ends through game_over, set by the two absorbing outcomes below. Any
+    # other total (including 11 and 2/3/12, which only matter on the come-out) re-rolls.
     while not game_over:
         input("Press enter to roll the two dice.")
         
